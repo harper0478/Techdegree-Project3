@@ -250,9 +250,42 @@ footer p {
 
 @media (min-width: 768px) {
 
+    #wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main label {
+        float: left;
+        clear: right;
+
+    }
+
+    .main input {
+        width: 70%;
+        float: right;
+    }
+
+    .main select {
+        width: 70%;
+        float: right;
+    }
+
+    
+
+
+        
+    
    
+    
 
 } 
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 
