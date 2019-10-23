@@ -15,9 +15,8 @@ header {
     text-align: center;
 }
 
-
 header h1{
-    background: darkslategrey;
+    background-image: linear-gradient(darkslategrey,rgb(65, 109, 109));
     color: white;
     margin: 0;
     padding: 30px 0;
@@ -32,15 +31,12 @@ header h2 {
 }
 
 header p {
-    /* margin-bottom: 30px; */
     margin: 0 15px;
     padding: 5px 0 40px;
     border-bottom: 5px solid darkslategrey;
     font-weight: 700;
     color: lightslategray;
-    
 }
-
 /*******************************************/
 
 hr {
@@ -48,6 +44,8 @@ hr {
     background-color: dimgray;
     width: 90%;
 }
+/*******************************************/
+
 
 /* contact info **********/
 
@@ -66,18 +64,22 @@ fieldset label {
 .info {
     font-size: 20px;
     font-weight: 700;
-    color: dimgray;
+    color: lightslategrey;
     padding-top: 20px;
     margin-bottom: 15px;
     border-top: 2px solid lightslategray;
     width: 100%;
-    
 }
 
 input {
     display: block;
     background-color: rgb(221, 221, 221);
     border: none;
+}
+
+input:focus {
+    background-color: rgb(243, 229, 210);
+    transition: .4s;
 }
 
 .field {
@@ -98,6 +100,7 @@ select[id="state"] {
 
 input[id="zip"] {
     width: 50%;
+    margin-bottom: 0;
 }
 
 input[placeholder="required"] {
@@ -106,18 +109,42 @@ input[placeholder="required"] {
     font-style: italic;
     padding-right: 20px;
 }
+
+input[placeholder="1+"] {
+    font-size: 12px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+input[placeholder="address"] {
+    font-size: 12px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+input[placeholder="city"] {
+    font-size: 12px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+
+
 /*******************************************/
 
 
 /* newsletter **********/
 .news {
     margin-top: 35px;
+    padding-top: 15px;
+    background-image: linear-gradient(white, darkslategrey);
+    color: white;
 }
 
 .news p {
    font-size: 15px;
    font-weight: 700;
-   color: lightslategray; 
+   color: dimgrey; 
 }
 
 .news input {
@@ -135,6 +162,8 @@ input[placeholder="required"] {
 .news label {
     display: inline-block;
     margin: 8px 0;
+    color:white;
+    text-shadow: 0 1px 3px rgba(0,0,0 .6);
 }
 /*******************************************/
 
@@ -144,18 +173,20 @@ input[placeholder="required"] {
 .format {
     font-size: 17px;
     font-weight: 700;
-    color: lightslategray;
+    color: dimgrey;
     margin:30px 0 15px; 
 }
 /*******************************************/
 
 
 /*other topics*/
-.news h3 {
+
+label[for="msg"] {
     font-size: 15px;
     font-weight: 700;
-    color: lightslategray;
-    margin: 20px 0 25px;
+    color: white;
+    width: 100%;
+    margin: 20px 0 10px;
 }
 
 textarea {
@@ -164,6 +195,17 @@ textarea {
     background-color: rgb(221, 221, 221);
     border-radius: 5px;
     border-color: rgb(221, 221, 221);
+}
+
+textarea[placeholder="type here"] {
+    font-size: 12px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+textarea:focus {
+    background-color: rgb(243, 229, 210);
+    transition: .4s;
 }
 /*******************************************/
 
@@ -174,11 +216,12 @@ button {
     width: 100%;
     padding: 18px 0;
     margin-top: 25px;
-    border: 1px solid;
+    border: 1px solid dodgerblue;
     border-radius: 5px;
     background-color: dodgerblue;
     color: white;
     font-size: 16px;
+    box-shadow: 0 2px 3px 1px rgb(16, 96, 177);
 }
 /*******************************************/
 
@@ -186,18 +229,30 @@ button {
 /* footer **********/
 footer {
     text-align: center;
+    background-color: darkslategrey;
+    height: 100px;
+    margin: 0 2px;
 }
 
 footer p {
     font-size: 13px;
     font-style: italic;
-    margin: 20px 0 50px;
+    margin: 0 0 50px;
     padding-top: 15px;
-    color: lightslategrey;
+    color: white;
 }
+/*******************************************/
 
 
 
+
+
+
+@media (min-width: 768px) {
+
+   
+
+} 
 
 
 
