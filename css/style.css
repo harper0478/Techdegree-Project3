@@ -132,7 +132,7 @@ input[placeholder="city"] {
 .news {
     margin-top: 35px;
     padding-top: 15px;
-    background-image: linear-gradient(white, darkslategrey);
+    background-image: linear-gradient(white, darkslategrey 90%);
     color: white;
 }
 
@@ -158,7 +158,7 @@ input[placeholder="city"] {
     display: inline-block;
     margin: 8px 0;
     color:white;
-    text-shadow: 0 1px 3px rgba(0,0,0 .6);
+    text-shadow: 0 1px 3px rgba(0,0,0, .6);
 }
 /*******************************************/
 
@@ -243,57 +243,86 @@ footer p {
 
 
 /*******************************************/
-@media (min-width: 768px) {
+@media(min-width: 768px) {
+
+    body {
+        background-image: linear-gradient(white 55%, darkslategrey);
+    }
+
+    form {
+        width: 88%;
+        margin: 0 auto;
+    }
 
     #wrapper {
         width: 80%;
         margin: 0 auto;
-        max-width: 768px;
+        max-width: 769px;
     }
+    /*******************************************/
+
 
     /* Header */
 
+    header h2 {
+        font-size: 1.5em; /*24px*/
+    }
+
     header p {
-        width: 76%;
+        width: 75%;
         margin: 0 auto;
-        max-width: 740px;
+        max-width: 650px;
     }
     /*******************************************/
 
 
     /* contact info **********/
 
+    .main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .main label {
         float: left;
         clear: right;
         margin-top: 25px;
-
     }
 
     .main input {
-        width: 75%;
+        width: 73%;
         float: right;
     }
 
     .main select {
-        width: 75%;
+        width: 73%;
         float: right;
     }
 
     input[id="zip"] {
-        width: 25%;
+        width: 20%;
         display: inline-block;
-        margin-right: 50%;
+        margin-right: 53%;
     }
     /*******************************************/
 
 
     /* newsletter **********/
 
-    .news .news-box {
-        width: 80%;
-        margin: 0 auto;
-        max-width: 768px;
+    .info {
+        padding-top: 40px;
+    }
+    /*******************************************/
+
+
+    /* footer **********/
+
+    footer {
+        height: 100px;
+    } 
+
+    footer p {
+        padding-top: 25px;
     }
     /*******************************************/
 } 
@@ -305,7 +334,7 @@ footer p {
     }
 
 
-
+    
 
 
 
